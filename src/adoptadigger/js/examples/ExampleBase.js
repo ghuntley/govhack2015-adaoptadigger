@@ -144,8 +144,8 @@ function initExample() {
 		// 480p camera resolution + 480x400 BRF roi + 320x320 centered face detection roi + 480p screenRect
 		_this._cameraResolution		= cameraResolution	|| new lib.Rectangle(   0,   0,  640, 480),	// Camera resolution
 		_this._brfResolution		= brfResolution		|| new lib.Rectangle(   0,   0,  640, 480),	// BRF BitmapData size
-		_this._brfRoi				= brfRoi			|| new lib.Rectangle(  80,  40,  480, 400),	// BRF region of interest within BRF BitmapData size
-		_this._faceDetectionRoi		= faceDetectionRoi	|| new lib.Rectangle( 160,  80,  320, 320),	// BRF face detection region of interest within BRF BitmapData size
+		_this._brfRoi				= brfRoi			|| new lib.Rectangle(  160,  0,  480, 480),	// BRF region of interest within BRF BitmapData size
+		_this._faceDetectionRoi		= faceDetectionRoi	|| new lib.Rectangle( 160,  0,  480, 480),	// BRF face detection region of interest within BRF BitmapData size
 		_this._screenRect			= screenRect		|| new lib.Rectangle(   0,   0,  640, 480),	// Shown video screen rectangle
 		
 		// 720p camera resolution + 520x400 BRF roi + 320x320 face detection roi + 720p screenRect
@@ -162,7 +162,7 @@ function initExample() {
 //		_this._faceDetectionRoi		= faceDetectionRoi	|| new lib.Rectangle( 160,  80,  320, 320),	// BRF face detection region of interest within BRF BitmapData size
 //		_this._screenRect			= screenRect		|| new lib.Rectangle(   0,   0, 1280, 720),	// Shown video screen rectangle
 		
-		_this._maskContainer		= maskContainer;	// Mask the video and draw container to match the screen rect width and height.
+		// _this._maskContainer		= maskContainer;	// Mask the video and draw container to match the screen rect width and height.
 		_this._mirrored				= webcamInput;		// Mirror webcam, but don't mirror images.
 		_this._webcamInput			= webcamInput;
 		_this._cameraRotation		= 0.0;
@@ -316,7 +316,7 @@ function initExample() {
 			if(_this._camera.videoWidth == 0) {
 				setTimeout(_this.onStreamDimensionsAvailable, 500);
 			} else {
-				//init rest
+		`		//init rest
 				console.log("Stream dimensions: " +  _this._camera.videoWidth + "x" + _this._camera.videoHeight);
 				
 				// false: leave _screenRect as it was meant to be.
