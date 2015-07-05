@@ -1,0 +1,17 @@
+Adobe After Effects v13.5 Windows 64 render log for project “checkpoint-3.aep”
+
+Rendering started on 5/07/2015 at 3:27:49 AM
+
+  5/07/2015 3:27:49 AM: Starting composition “Comp 1”.
+
+  Output To: C:\Users\ghuntley\Desktop\bookmarks\Comp 1.avi    5/07/2015 3:28:49 AM: Finished composition “Comp 1”.
+
+
+  5/07/2015 3:28:49 AM: Starting composition “Comp 1”.
+
+  Output To: C:\Users\ghuntley\Desktop\bookmarks\Comp 1_1.avi    5/07/2015 3:28:57 AM: Finished composition “Comp 1”.
+
+
+  Total Time Elapsed: 1 Min, 8 Sec
+Log closed on 5/07/2015 at 3:28:57 AM
+
